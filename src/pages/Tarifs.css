@@ -1,0 +1,162 @@
+.tarifs-page { padding-top: 72px; }
+
+.tarifs-hero {
+  padding: 60px 0 50px;
+  text-align: center;
+  background: linear-gradient(180deg, #F7F8FC, #FFF);
+}
+.tarifs-hero h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+.tarifs-hero p {
+  font-size: 1.05rem;
+  color: var(--text-medium);
+  max-width: 500px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .tarifs-hero { padding: 80px 0 60px; }
+  .tarifs-hero h1 { font-size: 3rem; }
+}
+
+.tarifs-plans {
+  padding: 40px 0 80px;
+}
+.tarifs-plans__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .tarifs-plans__grid { grid-template-columns: 1fr 1fr 1fr; }
+}
+
+.plan-card {
+  background: white;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-xl);
+  padding: 36px 28px;
+  text-align: center;
+  position: relative;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+.plan-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+.plan-card--popular {
+  border: 2px solid var(--primary);
+  box-shadow: var(--shadow-primary);
+  transform: scale(1.02);
+}
+.plan-card--popular:hover {
+  transform: translateY(-6px) scale(1.02);
+}
+.plan-card__badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 6px 20px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+}
+.plan-card__icon {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+.plan-card h3 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+.plan-card__price {
+  margin-bottom: 12px;
+}
+.plan-card__amount {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text-dark);
+}
+.plan-card__period {
+  font-size: 1rem;
+  color: var(--text-light);
+}
+.plan-card__desc {
+  font-size: 0.9rem;
+  color: var(--text-medium);
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+.plan-card__features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 28px;
+  text-align: left;
+  flex: 1;
+}
+.plan-card__features li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  color: var(--text-medium);
+}
+.plan-card__btn {
+  width: 100%;
+  padding: 14px;
+  font-size: 0.95rem;
+}
+
+.tarifs-faq {
+  padding: 80px 0;
+  background: var(--bg-light);
+}
+.tarifs-faq h2 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.faq-card {
+  background: white;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+}
+.faq-card h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.faq-card p {
+  font-size: 0.9rem;
+  color: var(--text-medium);
+  line-height: 1.6;
+}
+@media (min-width: 768px) {
+  .faq-grid { grid-template-columns: 1fr 1fr; }
+}

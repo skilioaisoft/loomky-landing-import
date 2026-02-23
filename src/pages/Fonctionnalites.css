@@ -1,0 +1,110 @@
+.features-page { padding-top: 72px; }
+
+.features-hero {
+  padding: 60px 0 50px;
+  text-align: center;
+  background: linear-gradient(180deg, #F7F8FC, #FFF);
+}
+.features-hero h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+.features-hero p {
+  font-size: 1.05rem;
+  color: var(--text-medium);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+@media (min-width: 768px) {
+  .features-hero { padding: 80px 0 60px; }
+  .features-hero h1 { font-size: 3rem; }
+}
+
+.features-grid-section {
+  padding: 40px 0 80px;
+}
+.features-categories {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+.feature-category {
+  background: white;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-xl);
+  padding: 28px;
+  transition: var(--transition);
+}
+.feature-category:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: transparent;
+}
+.feature-category__header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+.feature-category__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feature-category__icon .material-icons {
+  font-size: 26px;
+}
+.feature-category__header h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.feature-category__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.feature-category__list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: var(--text-medium);
+}
+@media (min-width: 768px) {
+  .features-categories { grid-template-columns: 1fr 1fr; }
+}
+@media (min-width: 1024px) {
+  .features-categories { grid-template-columns: 1fr 1fr 1fr; }
+}
+
+.features-image {
+  padding: 0 0 80px;
+}
+
+.features-cta {
+  padding: 80px 0;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  text-align: center;
+  color: white;
+}
+.features-cta h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+.features-cta h2 .gradient-text {
+  background: linear-gradient(135deg, #FFD700, #00D4AA);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+@media (min-width: 768px) {
+  .features-cta h2 { font-size: 2.8rem; }
+}
